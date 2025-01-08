@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <!-- Correct path to the styles.css file in the static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You!</h1>
+        <p>We have received your submissions. Here's what will be reviewed by the olympic body:</p>
+        <p>Name: {{ name }}</p>
+        <p>Sport: {{ sport }}</p>
+        <a href="/" class="button">Go Back Home</a>
+    </div>
+</body>
+</html>
